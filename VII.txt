@@ -1,0 +1,25 @@
+using System;
+					
+public class XII
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Ingresa EL Valor Del Producto: ");
+	int valor = Convert.ToInt32(Console.ReadLine());
+	int iva;
+	iva = valor * 10;
+	Console.WriteLine("Su Valor De Su Producto  Con IVA Es De " + iva);
+	}
+}using System;
+					
+public class XII
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Ingresa EL Valor Del Producto: ");
+	int valor = Convert.ToInt32(Console.ReadLine());
+	int iva;
+	iva = valor * 10;
+	Console.WriteLine("Su Valor De Su Producto  Con IVA Es De " + iva);
+	}
+}

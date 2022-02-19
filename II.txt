@@ -1,0 +1,15 @@
+using System;
+					
+public class II
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Ingrese El Lado Del Cuadrado: ");
+	int square = Convert.ToInt32(Console.ReadLine());
+	int sup = square * square;
+	int per = square * 4;
+	Console.WriteLine("El Lado De Su Cuadrado Es:" +square);
+	Console.WriteLine("La Superficie Es: "+ sup);
+	Console.WriteLine("El Perimetro Es: " +per);
+	}
+}

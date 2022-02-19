@@ -1,0 +1,27 @@
+from abc import ABC, abstractmethod
+class Persona(object):
+    def _init_(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+        
+    @abstractmethod
+    def nom(self):
+        return "Nombre: {}".format(self.nombre)
+    def age(self):
+        return "Edad: {}".format(self.edad)
+
+class Empleado(Persona):
+    def _init_(self, sueldo):
+        self.sueldo = sueldo
+    @abstractmethod
+    def mon(self):
+        return "Sueldo: {}".format(self.mon)
+        
+    
+persona = Persona(input("Ingresa tu nombre: ")) 
+edad = Edad(input("Ingresa tu edad: "))
+sueldo = Sueldo(input("Ingresa Tu Sueldo"))
+
+print(persona.nom())
+print(edad.age())
+print(sueldo.mon())

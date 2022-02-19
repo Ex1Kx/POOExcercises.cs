@@ -1,0 +1,16 @@
+using System;
+					
+public class Person: Employ 
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Ingrese Su Nombre: ");
+	string name = (Console.ReadLine());
+	Console.WriteLine("Ingrese Su Edad: ");
+	int age = Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine("Su Nombre Es: "+name);
+	Console.WriteLine("Su Edad Es: "+age);
+	Console.WriteLine("Su Empleo Es: "+emp);
+	Console.WriteLine("Su Sueldo Es: "+mon);
+	}
+}

@@ -1,0 +1,30 @@
+from abc import ABC, abstractmethod
+class Trabajador(object):
+    def _init_(self, nombre):
+        self.nombre = nombre
+        
+    @abstractmethod
+    def nom(self):
+        return "Nombre: {}".format(self.nombre)
+
+class Empleado(Trabajador):
+    def _init_(self, cantidadHoras):
+        self.valorHoras = 3.50
+        self.cantidadHoras = cantidadHoras
+        
+    @abstractmethod
+    def calcularSueldo(self):
+        self.sueldo = self.cantidadHoras * self.valorHoras 
+        self.abonosueldo = ((self.sueldo*10) /100) + self.sueldo
+        return 'El sueldo es de: {}'.format(self.abonosueldo)
+        
+class Gerente(Trabajador):
+    @abstractmethod
+    def Nose(self):
+        pass
+    
+    
+trabajador = Trabajador(input("ingresa nombre: ")) 
+empleado = Empleado(int(input("ingresa cantidad Horas trabajadas: ")))
+print(trabajador.nom())
+print(empleado.calcularSueldo())

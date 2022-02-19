@@ -1,0 +1,17 @@
+class Empleado:
+    def __init__(self, nombreEmpleado, sueldoEmpleado):
+        self.nombreEmpleado = nombreEmpleado
+        self.sueldoEmpleado = sueldoEmpleado
+
+    def datoEmpleado(self):
+        print("")
+        print ("Su nombre es: " + str(self.nombreEmpleado) + " y el Sueldo que tiene: " + str(self.sueldoEmpleado))
+    
+print("Objeto 1")    
+objetoEmpleado1 = Empleado(input("Ingrese su nombre: "), (input("Ingrese su sueldo: ")))
+objetoEmpleado1.datoEmpleado()
+
+print("")
+print("objeto 2")
+objetoEmpleado2 = Empleado(input("Ingrese su nombre: "), (1000))
+objetoEmpleado2.datoEmpleado()
